@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Formulário</title>
+</head>
+
+<body>
+    <!-- Início do header -->
+    <header>
+        <section>
+            <img src="/DesafioLandingPage/img/logo.png" alt="Logo Empresa" width="200" />
+
+            <!-- Início do menu do site -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="/DesafioLandingPage/contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Fim do menu do site -->
+        </section>
+    </header>
+    <!-- Fim do header -->
+    <main>
+        <!-- Início da section do conteúdo do site -->
+        <section>
+            <article>
+                <h1>Formulário de Contato</h1>
+                <p>Preencha os dados abaixo e envie sua mensagem de contato.</p>
+
+                <fieldset>
+                    <legend>
+                        <h5>Dados de Contato</h5>
+                    </legend>
+                    <form id="frmInscricao" action="contato.php" method="post">
+
+                        <label>Nome: </label><br>
+                        <input type="text" required="required" id="txtNome" maxlength="100" size="50"
+                            placeholder="Digite seu nome" />
+                        <br><br>
+
+                        <label for="dtNasc">Data de Nascimento:</label><br>
+                        <input type="date" id="dtNasc" required />
+                        <br><br>
+
+                        <label for="sexo">Sexo:</label><br>
+                        <input type="radio" id="masc" name="sexo" value="M" required="required" />
+                        <label for="masc">Masculino</label>
+                        <input type="radio" id="fem" name="sexo" value="F" required="required" />
+                        <label for="fem">Feminino</label>
+                        <br><br>
+
+                        <label for="txtEnd">Endereço:</label><br>
+                        <input type="text" required="required" id="txtEnd" maxlength="100" size="50"
+                            placeholder="Digite seu endereço" />
+                        <br><br>
+
+                        <label>Estado:</label><br>
+                        <select id="estado" required="required">
+                            <option value="">-Selecione-</option>
+                            <option value="1">Santa Catarina</option>
+                            <option value="2">Paraná</option>
+                            <option value="3">Rio Grande do Sul</option>
+                        </select>
+                        <br><br>
+
+                        <label>Cidade:</label><br>
+                        <select id="cidade" required="required">
+                            <option value="">-Selecione-</option>
+                            <option value="1">Florianópolis</option>
+                            <option value="2">Curitiba</option>
+                            <option value="3">Porto Alegre</option>
+                        </select>
+                        <br><br>
+
+                        <label for="celular">Celular:</label><br>
+                        <input type="tel" required="required" size="50" id="txtCelular" placeholder="(XX) X.XXXX-XXXX">
+                        <br><br>
+
+                        <label>E-mail:</label><br>
+                        <input type="email" required="required" size="50" id="txtEmail" placeholder="Digite seu e-mail">
+                        <br><br>
+
+                        <label>Área de Interesse:</label><br>
+                        <input type="checkbox" value="HTML" name="areasInteresse">
+                        <label>HTML5</label>
+
+                        <input type="checkbox" value="CSS3" name="areasInteresse">
+                        <label>CSS3</label>
+
+                        <input type="checkbox" value="JavaScript" name="areasInteresse">
+                        <label>JavaScript</label>
+                        <br><br>
+
+                        <label for="msg">Mensagem:</label><br>
+                        <textarea cols="60" rows="6"></textarea>
+                        <br><br>
+
+                        <input type="submit" value="Enviar" />
+                    </form>
+                </fieldset>
+            </article>
+        </Section>
+        <!-- Fim da section do conteúdo do site -->
+    </main>
+    <!-- Início do footer -->
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="/DesafioLandingPage/img/logo-insta.png" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="/DesafioLandingPage/img/logo-twitter.png" alt="Twitter">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="/DesafioLandingPage/img/logo-facebook.png" alt="Facebook">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Fim do footer -->
+</body>
+</html>
