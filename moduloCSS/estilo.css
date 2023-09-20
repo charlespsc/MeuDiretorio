@@ -15,3 +15,9 @@ p {
 #capitulo4 {
     font-size: 34px;
 }
+p.nome-pessoa {
+    color: blue;
+}
+.nome-pessoa.cadastro {
+    color: blueviolet;
+}
