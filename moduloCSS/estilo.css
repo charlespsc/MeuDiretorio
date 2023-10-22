@@ -1,23 +1,64 @@
 p {
-    color:green;
-    font-size: 100px;
-  }
+    color:black;
+    font-size: auto;
+    }
 
 #capitulo1 {
     font-size: 28px;
-}
+    }
+
 #capitulo2 {
     font-size: 30px;
-}
+    }
+
 #capitulo3 {
     font-size: 32px;
-}
+    }
+
 #capitulo4 {
     font-size: 34px;
-}
+    }
+
 p.nome-pessoa {
     color: blue;
-}
+    }
+
 .nome-pessoa.cadastro {
     color: blueviolet;
+    }
+
+a,
+    a:visited,
+    a:active {
+    color: #0000ff; /* Formato de cores Hexadecimal */
+    }
+
+p::first-line {
+    font-size: 24px;
+    }
+
+p::first-letter {
+    font-weight: bolder;
+    font-size: 50px;
+    }
+
+p.code {
+    color: rgb(255, 255, 255); /* branco */
+    background-color: rgb(0, 0, 0); /* preto no formato RGB */
+    }
+
+p {
+    background-color: red;
+    }
+
+/*div {
+    background-color: #2711e9;
+    }*/
+
+div {
+        background-image: url(iot.jpg);
+    }
+
+body {
+    font-family: 'Courier New', Courier, monospace;
 }
